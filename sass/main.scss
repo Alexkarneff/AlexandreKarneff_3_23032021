@@ -1,0 +1,31 @@
+.topContent {
+    width: 100% ;
+    justify-content: center;
+}
+
+.location {
+    display: flex;
+}
+
+
+.functionningStep {
+
+    box-shadow: 0px 0px 16px  #0000002e;
+    margin-bottom: 3rem;
+    display: flex;
+    border-radius: 50px;
+
+}
+.step {
+    color: #fff;
+    background-color: #9356DC ;
+    border-radius: 100px;
+    padding: 6px 10px 6px 10px;
+}
+
+.footerContent {
+    width: 100%;
+    background-color: rgb(58, 56, 56);
+    color:#fff;
+    padding: 15px 0px 10px 10px;
+}
