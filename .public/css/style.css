@@ -1,17 +1,59 @@
-.topContent {
-  width: 100%;
-  justify-content: center;
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainLogo img {
+  display: block;
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .location {
+  background-color: #dddada;
+  box-shadow: 0px 10px 16px #0000002e;
   display: flex;
+  justify-content: center;
+}
+.location__logoLocation {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.presentation {
+  padding: 2em;
+  text-align: center;
+  margin: 0;
+  background-color: #d4d3d3;
+}
+
+.presentation p {
+  font-weight: 300;
+}
+
+.explore {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 50px;
+  display: block;
+  margin: auto;
+  color: #fff;
+  padding: 12px 12px;
+  border: 0px;
+}
+
+.howItWorks h2, .restaurants h2 {
+  margin-left: 1em;
 }
 
 .functionningStep {
   box-shadow: 0px 0px 16px #0000002e;
-  margin-bottom: 3rem;
+  margin: 2em auto;
   display: flex;
-  border-radius: 50px;
+  border-radius: 20px;
+  width: 90%;
+  height: 70px;
+  align-items: center;
 }
 
 .step {
@@ -19,13 +61,75 @@
   background-color: #9356DC;
   border-radius: 100px;
   padding: 6px 10px 6px 10px;
+  height: 19px;
+  margin-left: -13px;
+  margin-right: 20px;
+}
+
+.logoStep {
+  margin-right: 20px;
+}
+
+.restaurantCards {
+  display: flex;
+  width: 90%;
+  height: 250px;
+  background-color: white;
+  border-radius: 25px;
+  flex-direction: column;
+  box-shadow: 0px 0px 16px #0000002e;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  margin: auto;
+}
+
+.imgRestaurant {
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height: 68%;
+  object-fit: cover;
+}
+
+.restaurantDescription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heartLogo {
+  margin-right: 22px;
+  font-size: 28px;
+}
+
+.restaurantInfo {
+  padding: 15px 0px 0px 15px;
+}
+
+.restaurantName {
+  margin: 0;
+}
+
+.restaurantLocation {
+  margin-top: 7px;
+  font-weight: 300;
 }
 
 .footerContent {
   width: 100%;
   background-color: #3a3838;
   color: #fff;
-  padding: 15px 0px 10px 10px;
+}
+
+.footerLogo {
+  margin-top: 1em;
+  margin-left: 1em;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.footerText {
+  margin-left: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
