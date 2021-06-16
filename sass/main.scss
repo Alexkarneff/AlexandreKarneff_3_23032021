@@ -75,21 +75,32 @@ border:0px;
 
 .logoStep {
     margin-right: 20px;
+    font-weight: 100;
+    color: gray;
+
+    &__Purple {
+        margin-right: 20px;
+        color: $color-primary;
+    }
 }
+
+
 
 
 .restaurantCards {
     display: flex;
     width: 90%;
-    height: 250px;
-    background-color: white;
+    background-color: $white;
     border-radius: 25px;
     flex-direction: column;
-    box-shadow: 0px 0px 16px  #0000002e;
-    margin-top: 2rem;
-    margin-bottom: 10rem;  
     margin: auto;
+}
 
+.restaurantCard {
+    height: 280px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 16px  #0000002e;
+    border-radius: 25px;
 }
 
 .imgRestaurant {
@@ -97,8 +108,7 @@ border:0px;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    height: 68%;
-    object-fit: cover;  
+    height: 70%; 
 }
 .restaurantDescription {
     display: flex;
@@ -123,16 +133,36 @@ border:0px;
     width: 100%;
     background-color: $color-footer;
     color:$white;
+    padding: 15px 0;
+   
 }
 
 .footerLogo {
-    margin-top: 1em;
-    margin-left: 1em;
+    margin-left: 25px;
     font-family: 'Shrikhand', sans-serif;
 }
 
 .footerText {
-    margin-left: 1em;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
 }
 
+.footerContent h2 {
+    margin: 4px;
+}
+
+.footerText p {
+    margin: 4px;
+    font-weight: lighter;
+}
+
+.footerFas {
+    margin-right: 0.5rem;
+    
+    &__helpingHand {
+        margin-right: 0.5rem;
+        font-size: 0.75em;
+    }
+}
 
