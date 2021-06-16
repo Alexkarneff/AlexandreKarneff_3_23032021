@@ -3,7 +3,29 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.mainLogo img {
+.mainLogo {
+  display: block;
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.arrowBack {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainLogo {
   display: block;
   margin: auto;
   padding-top: 1em;
