@@ -3,7 +3,7 @@
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: $body-font;
 }
 
 .mainLogo {
@@ -36,7 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Shrikhand',sans-serif;
+    font-family: $title-font;
     margin-left: 30px;
 }
 .restaurantTitle h2{
@@ -54,8 +54,6 @@ header {
     margin-left: 1em;
     margin-top: 2em;
     margin-bottom: 1.5em;
-    text-decoration: underline $color-tertiary 3px solid ;
-    text-underline-offset: 0.4em;
     
 }
 .restaurantContent {
@@ -65,6 +63,16 @@ header {
 .restaurantCategories p {
     margin: 0;
 }
+
+.restaurantCategories p::after {
+    content: "";
+    width: 3rem;
+    height: .25rem;
+    background-color: #99e2d0;
+    display: block;
+    margin-top: 5px;
+}
+
 
 
 .restaurantItem {
@@ -80,12 +88,17 @@ header {
 .itemName {
     margin: 0;
     padding: 10px 15px;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
 }
 .itemDescription {
     display: flex;
     justify-content: space-between;
     padding: 0 15px;
+ 
 }
 
 .itemDescription p {
@@ -95,6 +108,10 @@ header {
 .itemComment {
     font-weight: 300;
     font-size: 0.95em;
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .order {
@@ -120,7 +137,7 @@ header {
 
 .footerLogo {
     margin-left: 25px;
-    font-family: 'Shrikhand', sans-serif;
+    font-family: $title-font;
 }
 
 .footerText {

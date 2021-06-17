@@ -3,7 +3,7 @@
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: $body-font;
 }
 a {
     text-decoration: none;
@@ -155,7 +155,7 @@ footer a {
 
 .footerLogo {
     margin-left: 25px;
-    font-family: 'Shrikhand', sans-serif;
+    font-family: $title-font;
 }
 
 .footerText {
