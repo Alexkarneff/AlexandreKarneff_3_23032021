@@ -5,6 +5,12 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+a {
+    text-decoration: none;
+}
+
+
+
 
 .mainLogo {
     display: block;
@@ -103,6 +109,11 @@ border:0px;
     border-radius: 25px;
 }
 
+.restaurantCard a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 .imgRestaurant {
     object-fit: cover;
     width: 100%;
@@ -128,6 +139,11 @@ border:0px;
 .restaurantLocation {
     margin-top: 7px;
     font-weight: 300;
+}
+
+footer a {
+    color: $white;
+    
 }
 .footerContent {
     width: 100%;
@@ -156,7 +172,6 @@ border:0px;
     margin: 4px;
     font-weight: lighter;
 }
-
 .footerFas {
     margin-right: 0.5rem;
     

@@ -20,9 +20,131 @@ header {
   font-size: 1.1rem;
 }
 
+.restaurantImg Img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.restaurantMenu {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.restaurantTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Shrikhand", sans-serif;
+  margin-left: 30px;
+}
+
+.restaurantTitle h2 {
+  margin-bottom: 0;
+}
+
+.heartLogo {
+  margin-right: 40px;
+  font-size: 25px;
+}
+
+.restaurantCategories {
+  margin-left: 1em;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  text-decoration: underline #99E2D0 3px solid;
+  text-underline-offset: 0.4em;
+}
+
+.restaurantContent {
+  margin-bottom: 3em;
+}
+
+.restaurantCategories p {
+  margin: 0;
+}
+
+.restaurantItem {
+  height: 75px;
+  box-shadow: 0px 0px 16px #0000002e;
+  border-radius: 25px;
+  width: 93%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+.itemName {
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.itemDescription {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.itemDescription p {
+  margin: 0;
+}
+
+.itemComment {
+  font-weight: 300;
+}
+
+.order {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 50px;
+  display: block;
+  margin: auto;
+  color: #fff;
+  padding: 15px 35px;
+  border: 0px;
+}
+
+.footerContent {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: #3a3838;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.footerLogo {
+  margin-left: 25px;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.footerText {
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.footerContent h2 {
+  margin: 4px;
+}
+
+.footerText p {
+  margin: 4px;
+  font-weight: lighter;
+}
+
+.footerFas {
+  margin-right: 0.5rem;
+}
+.footerFas__helpingHand {
+  margin-right: 0.5rem;
+  font-size: 0.75em;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .mainLogo {
@@ -114,6 +236,11 @@ body {
   border-radius: 25px;
 }
 
+.restaurantCard a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 .imgRestaurant {
   object-fit: cover;
   width: 100%;
@@ -144,6 +271,10 @@ body {
 .restaurantLocation {
   margin-top: 7px;
   font-weight: 300;
+}
+
+footer a {
+  color: #fff;
 }
 
 .footerContent {
