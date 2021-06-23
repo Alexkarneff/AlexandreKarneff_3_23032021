@@ -177,6 +177,55 @@ a {
   text-decoration: none;
 }
 
+.mainContent {
+  animation: seconds 1s backwards;
+  animation-delay: 3s;
+}
+
+@keyframes seconds {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  box-sizing: border-box;
+  color: #333;
+  display: flex;
+  max-width: 80rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* LOADER */
+#loader {
+  border: 1.6rem solid #9356DC;
+  border-radius: 50%;
+  border-top: 1.6rem solid #99E2D0;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2.5s linear 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 .mainLogo {
   display: block;
   margin: auto;

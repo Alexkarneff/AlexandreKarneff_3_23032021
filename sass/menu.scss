@@ -23,6 +23,7 @@ header {
     font-size: 1.1rem;
 }
 
+
 .restaurantImg Img {
     width: 100%;
     height: 200px;
@@ -45,6 +46,7 @@ header {
 
 
 
+
 .heartLogo {
     margin-right: 40px;
     font-size: 25px;
@@ -60,8 +62,12 @@ header {
     margin-left: 1em;
     margin-top: 2em;
     margin-bottom: 1.5em;
+
     
 }
+
+
+
 .restaurantContent {
     margin-bottom: 3em;
 }
@@ -88,7 +94,21 @@ header {
     width: 93%;
     margin: auto;
     margin-bottom: 1em;
+    animation: seconds 1.0s backwards;
+    animation-delay: 1s;
 }
+
+@keyframes seconds {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
 
 
 .itemName {

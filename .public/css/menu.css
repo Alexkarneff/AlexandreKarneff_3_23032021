@@ -83,8 +83,18 @@ header {
   width: 93%;
   margin: auto;
   margin-bottom: 1em;
+  animation: seconds 1s backwards;
+  animation-delay: 1s;
 }
 
+@keyframes seconds {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .itemName {
   margin: 0;
   padding: 10px 15px;
