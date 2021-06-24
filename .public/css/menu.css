@@ -37,6 +37,8 @@ header {
   align-items: center;
   font-family: "Shrikhand", sans-serif;
   margin-left: 30px;
+  animation: seconds 1s backwards;
+  animation-delay: 0.5s;
 }
 
 .restaurantTitle h2 {
@@ -44,9 +46,9 @@ header {
 }
 
 .heartLogo {
+  margin-top: 20px;
   margin-right: 40px;
   font-size: 25px;
-  transition: all 500ms;
 }
 .heartLogo:hover {
   color: #9356DC;
@@ -83,13 +85,29 @@ header {
   width: 93%;
   margin: auto;
   margin-bottom: 1em;
+}
+
+.restaurantStarters {
   animation: seconds 1s backwards;
   animation-delay: 1s;
+}
+
+.restaurantMains {
+  animation: seconds 1s backwards;
+  animation-delay: 2s;
+}
+
+.restaurantDeserts {
+  animation: seconds 1s backwards;
+  animation-delay: 3s;
 }
 
 @keyframes seconds {
   0% {
     opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
