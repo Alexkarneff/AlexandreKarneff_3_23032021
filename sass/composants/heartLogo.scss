@@ -1,0 +1,36 @@
+.heartLogoIndex {
+    cursor: pointer;
+    font-size: 1.7rem;
+    padding-right: 1em;
+    &:hover .fas {
+      transform-origin: bottom;
+      transition: transform 1000ms;
+      transform: scale(0.88);
+    }
+
+    .fas {
+      color: $color-button;
+      position: absolute;
+      transform: scale(0);  
+    }
+  }
+
+  .heartLogoRestaurant {
+  
+    cursor: pointer;
+    font-size: 1.7rem;
+    padding-right: 1em;
+    padding-top: 1rem;
+    &:hover .fas {
+      padding-top: 1.8px;
+      transform-origin: bottom;
+      transition: transform 1000ms;
+      transform: scale(0.88);
+    }
+
+    .fas {
+      color: $color-button;
+      position: absolute;
+      transform: scale(0);  
+    }
+  }

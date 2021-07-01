@@ -1,17 +1,5 @@
-@import "./utils/variables";
+@import "./utils/variables", "./base.scss", "./composants/heartLogo.scss", "./utils/keyframes.scss";
 
-
-body {
-    margin: 0;
-    font-family: $body-font;
-}
-
-.mainLogo {
-    display: block;
-    margin: auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
 
 header {
     display: flex;
@@ -46,17 +34,6 @@ header {
     margin-bottom: 0;
 }
 
-.heartLogo {
-    margin-top: 20px;
-    margin-right: 40px;
-    font-size: 25px;
-    
-&:hover { 
-        color: $color-primary;
-        cursor: pointer;
-    }
-}
-
 .restaurantCategories {
     margin-left: 1em;
     margin-top: 2em;
@@ -80,43 +57,69 @@ header {
     margin-top: 5px;
 }
 
-
-
-.restaurantItem {
-    height: 75px;
-    box-shadow: 0px 0px 16px  #0000002e;
-    border-radius: 25px;
-    width: 93%;
-    margin: auto;
-    margin-bottom: 1em;
-    
-}
 .restaurantStarters {
-    animation: seconds 1.0s backwards;
+    animation: secondsMenu 1.0s backwards;
     animation-delay: 1s;
 }
 .restaurantMains {
-    animation: seconds 1.0s backwards;
+    animation: secondsMenu 1.0s backwards;
     animation-delay: 2s;
 }
 .restaurantDeserts {
-    animation: seconds 1.0s backwards;
+    animation: secondsMenu 1.0s backwards;
     animation-delay: 3s;
 }
-@keyframes seconds {
-    0% {
-      opacity: 0;
+
+
+
+
+.restaurantItem {
+    position: relative;
+    box-shadow: 0px 0px 16px  #0000002e;;
+    border-radius: 20px;
+    margin: 1em auto;
+    overflow: hidden;
+    max-width: 350px;
+    height: 70px;
+    padding: 0.5em;
+    cursor: pointer;
+
+    &:hover .itemName,
+    &:hover .itemComment
+     {
+      transition: all 0.5s ;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 250px;
     }
-    30% {
-      opacity: 0.5;
+    &:hover .checkIcon {
+      transition: right 0.5s ;
+      right: 0;
     }
-    100% {
-      opacity: 1;
+    &:hover i {
+      animation: check 1s ease;
+    }
+
+}
+
+.checkIcon {
+    justify-content: center;
+    align-items: center;
+    background: $color-tertiary;
+    position: absolute;
+    display: flex;
+    right: -50px;
+    width: 50px;
+    height: 100%;
+    top: 0;
+    i {
+      color: white;
+      font-size: 20px;
+
+      
     }
   }
-
-
-
 
 
 .itemName {
@@ -125,12 +128,9 @@ header {
     width: 80%;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
-
 }
 .itemDescription {
     display: flex;
-    justify-content: space-between;
     padding: 0 15px;
  
 }
@@ -141,11 +141,10 @@ header {
 }
 .itemComment {
     font-weight: 300;
-    font-size: 0.95em;
+    font-size: 0.9em;
     width: 90%;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .order {
@@ -171,40 +170,3 @@ header {
 }
 
 
-.footerContent {
-    margin-top: 3rem;
-    width: 100%;
-    background-color: $color-footer;
-    color:$white;
-    padding: 15px 0;
-   
-}
-
-.footerLogo {
-    margin-left: 25px;
-    font-family: $title-font;
-}
-
-.footerText {
-    margin-left: 25px;
-    display: flex;
-    align-items: center;
-}
-
-.footerContent h2 {
-    margin: 4px;
-}
-
-.footerText p {
-    margin: 4px;
-    font-weight: lighter;
-}
-
-.footerFas {
-    margin-right: 0.5rem;
-    
-    &__helpingHand {
-        margin-right: 0.5rem;
-        font-size: 0.75em;
-    }
-}

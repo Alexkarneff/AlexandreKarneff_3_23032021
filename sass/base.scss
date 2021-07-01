@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: $body-font;  
+    cursor: default;  
+}
+address {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+/*header*/
+.mainLogo {
+    display: block;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+/*footer*/
+
+footer a {
+    color: $white;
+    
+}
+
+
+.footerContent {
+    margin-top: 3rem;
+    width: 100%;
+    background-color: $color-footer;
+    color:$white;
+    padding: 15px 0;
+   
+}
+
+.footerLogo {
+    margin-left: 20px;
+    font-family: $title-font;
+    margin-bottom: 1em;
+}
+
+.footerText {
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.footerContent h2 {
+    margin: 4px;
+}
+
+.footerText p {
+    margin: 4px;
+    font-weight: lighter;
+}
+
+.footerFas {
+    margin-right: 0.5rem;
+    
+    &__helpingHand {
+        margin-right: 0.5rem;
+        font-size: 0.7em
+    }
+}

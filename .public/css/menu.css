@@ -1,8 +1,18 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  cursor: default;
 }
 
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*header*/
 .mainLogo {
   display: block;
   margin: auto;
@@ -10,6 +20,109 @@ body {
   padding-bottom: 1em;
 }
 
+/*footer*/
+footer a {
+  color: #fff;
+}
+
+.footerContent {
+  margin-top: 3rem;
+  width: 100%;
+  background-color: #3a3838;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.footerLogo {
+  margin-left: 20px;
+  font-family: "Shrikhand", sans-serif;
+  margin-bottom: 1em;
+}
+
+.footerText {
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.footerContent h2 {
+  margin: 4px;
+}
+
+.footerText p {
+  margin: 4px;
+  font-weight: lighter;
+}
+
+.footerFas {
+  margin-right: 0.5rem;
+}
+.footerFas__helpingHand {
+  margin-right: 0.5rem;
+  font-size: 0.7em;
+}
+
+.heartLogoIndex {
+  cursor: pointer;
+  font-size: 1.7rem;
+  padding-right: 1em;
+}
+.heartLogoIndex:hover .fas {
+  transform-origin: bottom;
+  transition: transform 1000ms;
+  transform: scale(0.88);
+}
+.heartLogoIndex .fas {
+  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  position: absolute;
+  transform: scale(0);
+}
+
+.heartLogoRestaurant {
+  cursor: pointer;
+  font-size: 1.7rem;
+  padding-right: 1em;
+  padding-top: 1rem;
+}
+.heartLogoRestaurant:hover .fas {
+  padding-top: 1.8px;
+  transform-origin: bottom;
+  transition: transform 1000ms;
+  transform: scale(0.88);
+}
+.heartLogoRestaurant .fas {
+  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  position: absolute;
+  transform: scale(0);
+}
+
+@keyframes check {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes secondsMain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes secondsMenu {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -45,16 +158,6 @@ header {
   margin-bottom: 0;
 }
 
-.heartLogo {
-  margin-top: 20px;
-  margin-right: 40px;
-  font-size: 25px;
-}
-.heartLogo:hover {
-  color: #9356DC;
-  cursor: pointer;
-}
-
 .restaurantCategories {
   margin-left: 1em;
   margin-top: 2em;
@@ -78,53 +181,73 @@ header {
   margin-top: 5px;
 }
 
-.restaurantItem {
-  height: 75px;
-  box-shadow: 0px 0px 16px #0000002e;
-  border-radius: 25px;
-  width: 93%;
-  margin: auto;
-  margin-bottom: 1em;
-}
-
 .restaurantStarters {
-  animation: seconds 1s backwards;
+  animation: secondsMenu 1s backwards;
   animation-delay: 1s;
 }
 
 .restaurantMains {
-  animation: seconds 1s backwards;
+  animation: secondsMenu 1s backwards;
   animation-delay: 2s;
 }
 
 .restaurantDeserts {
-  animation: seconds 1s backwards;
+  animation: secondsMenu 1s backwards;
   animation-delay: 3s;
 }
 
-@keyframes seconds {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+.restaurantItem {
+  position: relative;
+  box-shadow: 0px 0px 16px #0000002e;
+  border-radius: 20px;
+  margin: 1em auto;
+  overflow: hidden;
+  max-width: 350px;
+  height: 70px;
+  padding: 0.5em;
+  cursor: pointer;
 }
+.restaurantItem:hover .itemName, .restaurantItem:hover .itemComment {
+  transition: all 0.5s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 250px;
+}
+.restaurantItem:hover .checkIcon {
+  transition: right 0.5s;
+  right: 0;
+}
+.restaurantItem:hover i {
+  animation: check 1s ease;
+}
+
+.checkIcon {
+  justify-content: center;
+  align-items: center;
+  background: #99E2D0;
+  position: absolute;
+  display: flex;
+  right: -50px;
+  width: 50px;
+  height: 100%;
+  top: 0;
+}
+.checkIcon i {
+  color: white;
+  font-size: 20px;
+}
+
 .itemName {
   margin: 0;
   padding: 10px 15px;
   width: 80%;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .itemDescription {
   display: flex;
-  justify-content: space-between;
   padding: 0 15px;
 }
 
@@ -134,11 +257,10 @@ header {
 
 .itemComment {
   font-weight: 300;
-  font-size: 0.95em;
+  font-size: 0.9em;
   width: 90%;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .order {
@@ -158,42 +280,6 @@ header {
   filter: brightness(105%);
   box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
   cursor: pointer;
-}
-
-.footerContent {
-  margin-top: 3rem;
-  width: 100%;
-  background-color: #3a3838;
-  color: #fff;
-  padding: 15px 0;
-}
-
-.footerLogo {
-  margin-left: 25px;
-  font-family: "Shrikhand", sans-serif;
-}
-
-.footerText {
-  margin-left: 25px;
-  display: flex;
-  align-items: center;
-}
-
-.footerContent h2 {
-  margin: 4px;
-}
-
-.footerText p {
-  margin: 4px;
-  font-weight: lighter;
-}
-
-.footerFas {
-  margin-right: 0.5rem;
-}
-.footerFas__helpingHand {
-  margin-right: 0.5rem;
-  font-size: 0.75em;
 }
 
 /*# sourceMappingURL=menu.css.map */

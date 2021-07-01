@@ -1,28 +1,11 @@
-@import "./utils/variables", "./menu.scss";
+@import "./utils/variables", "./base.scss", "./composants/heartLogo.scss", "./composants/spinner.scss", "./utils/keyframes.scss" ;
 
-
-body {
-    margin: 0;
-    font-family: $body-font;    
-}
-
-a {
-    text-decoration: none;
-}
 
 .mainContent {
-  animation: seconds 1.0s backwards;
+  animation: secondsMain 1.0s backwards;
   animation-delay: 3s;
+}
 
-}
-@keyframes seconds {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 
 .container {
@@ -36,45 +19,6 @@ a {
     transform: translate(-50%, -50%)
 }
 
-
-/* LOADER */
-
-#loader {
-    border: 1.6rem solid $color-primary;
-    border-radius: 50%;
-    border-top: 1.6rem solid $color-tertiary;
-    width: 12rem;
-    height: 12rem;
-    animation: spin 2.5s linear 0.5s;
-    animation-fill-mode: forwards;
-
-}
-
-@keyframes spin {
-    0% {
-        opacity: 1;
-        transform: rotate(0deg);
-        
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(360deg);
-        visibility: hidden;
-        opacity: 0;
-    }
-
-}
-
-
-
-.mainLogo {
-    display: block;
-    margin: auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
 
 .location {
 
@@ -194,10 +138,7 @@ a {
     align-items: center;
     justify-content: space-between;
 }
-.heartLogo {
-    margin-right: 22px;
-    font-size: 28px;
-}
+
 .restaurantInfo {
     padding: 15px 0px 0px 15px;
 }
@@ -209,43 +150,4 @@ a {
     font-weight: 300;
 }
 
-footer a {
-    color: $white;
-    
-}
-.footerContent {
-    width: 100%;
-    background-color: $color-footer;
-    color:$white;
-    padding: 15px 0;
-   
-}
-
-.footerLogo {
-    margin-left: 25px;
-    font-family: $title-font;
-}
-
-.footerText {
-    margin-left: 25px;
-    display: flex;
-    align-items: center;
-}
-
-.footerContent h2 {
-    margin: 4px;
-}
-
-.footerText p {
-    margin: 4px;
-    font-weight: lighter;
-}
-.footerFas {
-    margin-right: 0.5rem;
-    
-    &__helpingHand {
-        margin-right: 0.5rem;
-        font-size: 0.75em;
-    }
-}
 
