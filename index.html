@@ -15,11 +15,12 @@
     <title> ohmyfood </title>
 </head>
 
-<div class="container">
-    <div id="loader"></div>
-</div>
+
 
 <body>
+    <div class="container">
+        <div id="loader"></div>
+    </div>
 
     <div class="mainContent">
         <header>
@@ -43,16 +44,17 @@
 
 
         <section class="presentation">
-            <span class="reserve">
+            <div class="reserve">
                 <h2>Réservez le menu qui vous convient</h2>
-            </span>
+            </div>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
 
-            <a href="#restaurants">
-                <button class="explore">
+            <button class="explore">
+                <a href="#restaurants">
+
                     Explorer nos restaurants
-                </button>
-            </a>
+                </a>
+            </button>
 
         </section>
 
@@ -115,14 +117,14 @@
                     </a>
                     <div class="restaurantDescription">
                         <a href="./palette.html">
-                        <div class="restaurantInfo">
-                            <h3 class="restaurantName">
-                                La palette du goût
-                            </h3>
-                            <p class="restaurantLocation">
-                                Ménilmontant
-                            </p>
-                        </div>
+                            <div class="restaurantInfo">
+                                <h3 class="restaurantName">
+                                    La palette du goût
+                                </h3>
+                                <p class="restaurantLocation">
+                                    Ménilmontant
+                                </p>
+                            </div>
 
                         </a>
                         <div class="heartLogoIndex">
@@ -213,52 +215,52 @@
         </section>
 
 
-    </div>
 
 
 
 
-    <footer>
 
-        <div class="footerContent">
+        <footer>
 
-            <div class="footerLogo">
-                <h2>ohmyfood</h2>
+            <div class="footerContent">
+
+                <div class="footerLogo">
+                    <h2>ohmyfood</h2>
+                </div>
+                <a href="#">
+                    <div class="footerText">
+
+                        <div class="footerFas">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <p>Proposer un restaurant</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="footerText">
+
+                        <div class="footerFas__helpingHand">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+
+                        <p>Devenir partenaire</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="footerText">
+                        <p>Mentions légales</p>
+                    </div>
+                </a>
+                <address>
+                    <a href="mailto:ohmyfood@example.com">
+                        <div class="footerText">
+                            <p>Contact</p>
+                        </div>
+                    </a>
+                </address>
             </div>
-            <a href="#">
-                <div class="footerText">
 
-                    <div class="footerFas">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <p>Proposer un restaurant</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="footerText">
-
-                    <div class="footerFas__helpingHand">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-
-                    <p>Devenir partenaire</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="footerText">
-                    <p>Mentions légales</p>
-                </div>
-            </a>
-            <address>
-            <a href="mailto:ohmyfood@example.com">
-                <div class="footerText">
-                    <p>Contact</p>
-                </div>
-            </a>
-        </address>
-        </div>
-
-    </footer>
+        </footer>
 
 
     </div>

@@ -13,6 +13,11 @@ a {
 }
 
 /*header*/
+header {
+  display: flex;
+  align-items: center;
+}
+
 .mainLogo {
   display: block;
   margin: auto;
@@ -73,9 +78,12 @@ footer a {
   transform: scale(0.88);
 }
 .heartLogoIndex .fas {
-  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   position: absolute;
   transform: scale(0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .heartLogoRestaurant {
@@ -91,9 +99,12 @@ footer a {
   transform: scale(0.88);
 }
 .heartLogoRestaurant .fas {
-  color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   position: absolute;
   transform: scale(0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes check {
@@ -123,11 +134,6 @@ footer a {
     opacity: 1;
   }
 }
-header {
-  display: flex;
-  align-items: center;
-}
-
 .arrowBack {
   margin-left: 1rem;
   font-size: 1.1rem;

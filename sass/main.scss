@@ -50,7 +50,6 @@
     display: block;
     margin: auto;
     box-shadow: 0px 0px 16px  #0000002e;
-    color: $white;
     padding: 15px 35px;
     border:0px;
     overflow: hidden;
@@ -64,6 +63,10 @@
         cursor: pointer,
     }
 
+}
+
+.explore a {
+    color: $white;
 }
 
 .howItWorks h2, #restaurants h2 {
