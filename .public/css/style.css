@@ -301,4 +301,24 @@ footer a {
   font-weight: 300;
 }
 
+@media screen and (min-width: 1058px) {
+  .restaurantCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .restaurantCard {
+    width: 500px;
+    height: 350px;
+    margin-right: 2em;
+  }
+
+  .imgRestaurant {
+    height: 78%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

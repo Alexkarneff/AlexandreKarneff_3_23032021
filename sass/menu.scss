@@ -87,7 +87,7 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      width: 250px;
+      width: 210px;
     }
     &:hover .checkIcon {
       transition: right 0.5s ;
@@ -123,6 +123,7 @@
     padding: 10px 15px;
     width: 80%;
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 .itemDescription {
@@ -140,7 +141,12 @@
     font-size: 0.9em;
     width: 90%;
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.itemPrice {
+    font-size: 14px;
 }
 
 .order {
@@ -164,5 +170,32 @@
     }
 
 }
+
+@media screen and (min-width: 1058px) {
+
+    .categoriesContent {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .restaurantItem {
+
+       width: 29%;
+       font-size: 15px;
+    }
+
+    .restaurantTitle {
+        margin-left: 40%;
+    }
+
+    .restaurantDescription {
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+}
+    
 
 
