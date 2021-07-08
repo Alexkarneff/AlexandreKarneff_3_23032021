@@ -1,7 +1,10 @@
+@import "./utils/variables";
+
 body {
     margin: 0;
     font-family: $body-font;  
     cursor: default;  
+    max-width: 2500px;
 }
 
 
