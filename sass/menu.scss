@@ -87,7 +87,7 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      width: 210px;
+      width: 220px;
     }
     &:hover .checkIcon {
       transition: right 0.5s ;
@@ -175,6 +175,40 @@
     }
     
 }
+
+@media screen and (max-width: 350px) {
+
+    .itemDescription, .itemName {
+        font-size: 12.5px;
+
+    }
+
+    .itemPrice {
+        font-size:10px;
+    }
     
+    .restaurantItem {  
+        width: 80%;
+        height: 60px;
 
+        &:hover .itemName,
+        &:hover .itemComment
+         {
+          width: 140px;
+        }
+    }
 
+    .itemComment {
+        white-space:inherit;
+}
+
+}
+
+@media screen and (min-height: 1260px ) {
+
+    footer {
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}

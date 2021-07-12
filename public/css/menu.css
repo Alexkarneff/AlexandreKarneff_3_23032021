@@ -29,7 +29,6 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   cursor: default;
-  max-width: 2500px;
 }
 
 address {
@@ -95,6 +94,22 @@ footer a {
   font-size: 0.7em;
 }
 
+@media screen and (min-width: 1058px) {
+  .footerLogo {
+    margin-left: 10%;
+  }
+
+  .footerText {
+    margin-left: 10%;
+  }
+}
+@media screen and (min-height: 1775px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
 .button {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 50px;
@@ -122,7 +137,7 @@ footer a {
 .heartLogoIndex:hover .fas {
   transform-origin: bottom;
   transition: transform 1000ms;
-  transform: scale(0.88);
+  transform: scale(0.85);
 }
 .heartLogoIndex .fas {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -140,10 +155,10 @@ footer a {
   padding-top: 1rem;
 }
 .heartLogoRestaurant:hover .fas {
-  padding-top: 1.8px;
+  padding-top: 2.8px;
   transform-origin: bottom;
   transition: transform 1000ms;
-  transform: scale(0.88);
+  transform: scale(0.89);
 }
 .heartLogoRestaurant .fas {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -263,7 +278,7 @@ footer a {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 210px;
+  width: 220px;
 }
 .restaurantItem:hover .checkIcon {
   transition: right 0.5s;
@@ -338,6 +353,34 @@ footer a {
   .restaurantDescription {
     display: flex;
     flex-direction: row;
+  }
+}
+@media screen and (max-width: 350px) {
+  .itemDescription, .itemName {
+    font-size: 12.5px;
+  }
+
+  .itemPrice {
+    font-size: 10px;
+  }
+
+  .restaurantItem {
+    width: 80%;
+    height: 60px;
+  }
+  .restaurantItem:hover .itemName, .restaurantItem:hover .itemComment {
+    width: 140px;
+  }
+
+  .itemComment {
+    white-space: inherit;
+  }
+}
+@media screen and (min-height: 1260px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 
