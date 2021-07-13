@@ -37,6 +37,7 @@ address {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /*header*/
@@ -285,8 +286,8 @@ footer a {
   background: #99E2D0;
   position: absolute;
   display: flex;
-  right: -50px;
-  width: 50px;
+  right: -60px;
+  width: 60px;
   height: 100%;
   top: 0;
 }
@@ -348,7 +349,7 @@ footer a {
 }
 @media screen and (max-width: 350px) {
   .itemDescription, .itemName {
-    font-size: 12.5px;
+    font-size: 13px;
   }
 
   .itemPrice {
@@ -360,14 +361,14 @@ footer a {
     height: 60px;
   }
   .restaurantItem:hover .itemName, .restaurantItem:hover .itemComment {
-    width: 140px;
+    width: 130px;
   }
 
   .itemComment {
     white-space: inherit;
   }
 }
-@media screen and (min-height: 1260px) {
+@media screen and (min-height: 1260px) and (min-width: 1058px) {
   footer {
     position: absolute;
     bottom: 0;

@@ -105,8 +105,8 @@
     background: $color-tertiary;
     position: absolute;
     display: flex;
-    right: -50px;
-    width: 50px;
+    right: -60px;
+    width: 60px;
     height: 100%;
     top: 0;
     i {
@@ -179,7 +179,7 @@
 @media screen and (max-width: 350px) {
 
     .itemDescription, .itemName {
-        font-size: 12.5px;
+        font-size: 13px;
 
     }
 
@@ -194,7 +194,7 @@
         &:hover .itemName,
         &:hover .itemComment
          {
-          width: 140px;
+          width: 130px;
         }
     }
 
@@ -204,7 +204,7 @@
 
 }
 
-@media screen and (min-height: 1260px ) {
+@media screen and (min-height: 1260px ) and (min-width: 1058px) {
 
     footer {
         position:absolute;

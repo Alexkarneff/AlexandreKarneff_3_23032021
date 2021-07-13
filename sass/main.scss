@@ -155,8 +155,16 @@
         height: 78%;
     }
 
+    .steps {
+        display: flex;
+        
+        
+    }
+
     .functionningStep {
-        width: 70%;
+        width: 30%;
+        margin-top: 2em;
+        margin-left: 2em;
     }
 }
 
@@ -168,7 +176,7 @@
     }
 }
 
-@media screen and (min-height: 1775px ) {
+@media screen and (min-height: 1600px ) and (min-width: 1058px) {
 
     footer {
         position:absolute;
