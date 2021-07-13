@@ -271,11 +271,22 @@ footer a {
   margin: auto;
 }
 
+.new {
+  background-color: #99E2D0;
+  font-size: 15px;
+  color: #2b947b;
+  position: absolute;
+  padding: 6px 12px;
+  top: 10px;
+  right: 10px;
+}
+
 .restaurantCard {
   height: 280px;
   margin-bottom: 2rem;
   box-shadow: 0px 0px 16px #0000002e;
-  border-radius: 25px;
+  border-radius: 20px;
+  position: relative;
 }
 
 .restaurantCard a:visited {
@@ -286,8 +297,8 @@ footer a {
 .imgRestaurant {
   object-fit: cover;
   width: 100%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   height: 70%;
 }
 
